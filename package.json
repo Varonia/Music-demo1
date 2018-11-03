@@ -1,0 +1,27 @@
+{
+    "dependencies": {
+        "jquery": "^3.3.1",
+        "leancloud-storage": "^3.6.0",
+        "plupload": "^2.3.2",
+        "qiniu": "^7.1.2",
+        "qiniu-js": "^1.0.22"
+    },
+    "name": "music",
+    "description": "网易云练手项目",
+    "version": "1.0.0",
+    "main": "index.js",
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Varonia/Music.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Varonia/Music/issues"
+    },
+    "homepage": "https://github.com/Varonia/Music#readme"
+}
