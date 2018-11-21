@@ -75,8 +75,10 @@
                         var domain = up.getOption('domain');
                         var res = JSON.parse(info.response);
                         var sourceLink = "http://" + domain + "/" + encodeURIComponent(res.key);
-                        console.log(sourceLink)
-                        console.log(res.key)
+                        window.eventHub.emit('upload', {
+                                link: sourceLink,
+                                key: res.key
+                            })
                             //获取上传成功后的文件的Url
 
                     },

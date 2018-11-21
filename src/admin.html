@@ -24,34 +24,13 @@
 
         </main>
     </div>
-    <script src="..\node_modules\jquery\dist\jquery.min.js"></script>
-    <script src="..\node_modules\_leancloud-storage@3.10.0@leancloud-storage\dist\av-min.js"></script>
-    <script src="..\node_modules\plupload\js\moxie.min.js"></script>
-    <script src="..\plupload.full.min.js"></script>
-    <script src="..\node_modules\qiniu-js\dist\qiniu.min.js"></script>
-    <script>
-        var APP_ID = 'YFyFMNoWhbpA3JkjxlC28EFz-gzGzoHsz';
-        var APP_KEY = 'AfU0gUOQGuFjj4kIrWTdVpiV';
-
-        AV.init({
-            appId: APP_ID,
-            appKey: APP_KEY
-        });
-    </script>
-    <script>
-        var TestObject = AV.Object.extend('Playlist');
-        var testObject = new TestObject();
-        testObject.save({
-            name: 'Hello World!',
-            cover: 'test',
-            createrId: 'test',
-            description: 'test'
-        }).then(function(object) {
-            alert('LeanCloud Rocks!');
-        })
-    </script>
-    <script>
-    </script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/_leancloud-storage@3.10.0@leancloud-storage/dist/av-min.js"></script>
+    <script src="./js/initializers/av.js"></script>
+    <script src="../node_modules/plupload/js/moxie.min.js"></script>
+    <script src="../plupload.full.min.js"></script>
+    <script src="../node_modules/qiniu-js/dist/qiniu.min.js"></script>
+    <script src="./js/event-hub.js"></script>
     <script src="./js/song-form.js"></script>
     <script src="./js/new-song.js"></script>
     <script src="./js/song-list.js"></script>
